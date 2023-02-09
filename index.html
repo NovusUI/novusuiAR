@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augmented-Reality</title>
+</head>
+<body>
+    <a-scene embedded arjs>
+         
+      <a-marker type='pattern' url='./assets/images/pattern-images (1).patt'>
+        <a-image src="./assets/images/pattern-images (1).png"
+          position= "0 1 0"
+          scale= "1 1 1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+      </a-marker>
+
+      <a-marker type='pattern' url='./assets/images/pattern-14-1-7.patt'>
+        <a-image src="./assets/images/gift-box-3112703 (1).png"
+          position= "0 1 0"
+          scale= "1 1 1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+      </a-marker>
+
+      <a-marker type='pattern' url='./assets/images/pattern-clrcy.patt'>
+        <a-image src="./assets/images/baked-quails-pan-dark-surface.jpg"
+          position= "0 1 0"
+          scale= "1 1 1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+      </a-marker>
+
+      <a-marker type='pattern' url='./assets/images/pattern-marker (3).patt'>
+        <a-image src="./assets/images/delicious-fried-chicken-plate (1).jpg"
+          position= "0 1 0"
+          scale= "1 1 1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+      </a-marker>
+
+      <a-marker type='pattern' url='./assets/images/pattern-hm01-7-pi6e3xgttc9h01hdz712jbpnbn63vjxzddytdhmd9g.patt'>
+        <a-image src="./assets/images/delicious-fried-chicken-plate.jpg"
+          position= "0 1 0"
+          scale= "1 1 1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+      </a-marker>
+
+      
+      <!-- <a-marker type='pattern' url='./assets/images/pattern-marker (3).patt'>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      </a-marker> -->
+
+
+      <a-entity camera></a-entity>
+    </a-scene> 
+    
+</body>
+</html>
