@@ -10,18 +10,45 @@
     <title>Augmented-Reality</title>
 </head>
 <body>
-    <a-scene  camera aspect-ratio="4:3" pov="50" embedded arjs>
-        
-        
+    <a-marker id="marker1" type='pattern' url='./assets/images/pattern-images (1).patt'>
+        <a-box position="0 1 0" rotation="0 45 0" color="#4CC3D9"></a-box>
+      </a-marker>
+
+<!--       <a-marker type='pattern' url='./assets/images/pattern-images (1).patt'>
+        <a-image src="./assets/images/pattern-images (1).png"
+          position= "0 1 0"
+          scale= "1 1 1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+      </a-marker> -->
+
+
+
          <a-marker id="marker2" type='pattern' url='./assets/images/pattern-IMG-20210419-WA0007.patt'>
-<!--         <a-image src="./assets/images/gift-box-3112703 (1).png"
+
+          <a-cylinder position="0 1 0" radius="0.5" height="1.5" color="#00FF00"></a-cylinder>
+
+      </a-marker>
+
+      <a-marker id="marker4" type='pattern' url='./assets/images/pattern-marker (3).patt'>
+<!--         <a-image src="./assets/images/delicious-fried-chicken-plate (1).jpg"
           position= "0 1 0"
           scale= "1 1 1"
           rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
         /> -->
-           <a-box position="0 1 0" rotation="0 45 0" color="#00FF00"></a-box>
+
       </a-marker>
 
+      <a-marker id="marker5" type='pattern' url='./assets/images/pattern-06.patt'>
+
+           <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B"></a-sphere>
+      </a-marker> 
+
+
+
+      <!-- <a-marker type='pattern' url='./assets/images/pattern-marker (3).patt'>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      </a-marker> -->
         
       
 
