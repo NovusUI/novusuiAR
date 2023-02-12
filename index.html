@@ -12,18 +12,29 @@
 <body>
    <a-scene camera aspect-ratio="4:3" pov="50" embedded arjs>
     <a-marker id="marker1" type='pattern' url='./assets/images/pattern-images (1).patt'>
+        <a-entity id="my-object">
         <a-box position="0 1 0" rotation="0 45 0" color="#4CC3D9">
         <a-animation attribute="scale"
                  dur="500"
                  to="2 2 2"
                  repeat="indefinite"
-                 direction="alternate"></a-animation></a-box>
+                 direction="alternate"></a-animation>
+            </a-box>
+            </a-entity>
       </a-marker>
 
-
+       <a-entity id="my-object">
          <a-marker id="marker2" type='pattern' url='./assets/images/pattern-IMG-20210419-WA0007.patt'>
-
-           <a-box position="0 1 0" rotation="0 45 0" color="#5d612f"></a-box>
+             
+             <
+           <a-box position="0 1 0" rotation="0 45 0" color="#5d612f">
+               <a-animation attribute="scale"
+                 dur="500"
+                 to="2 2 2"
+                 repeat="indefinite"
+                 direction="alternate"></a-animation>
+            </a-box>
+           </a-entity>
 
       </a-marker>
 
@@ -39,7 +50,23 @@
       </a-marker> 
 
       <a-entity camera></a-entity>
-    </a-scene> 
+    </a-scene>
+    
+    <script>
+  const myObject = document.querySelector("#my-object");
+
+  myObject.addEventListener("click", function() {
+    this.setAttribute("scale", "3 3 3");
+  });
+
+  myObject.addEventListener("mouseenter", function() {
+    this.setAttribute("scale", "2 2 2");
+  });
+
+  myObject.addEventListener("mouseleave", function() {
+    this.setAttribute("scale", "1 1 1");
+  });
+</script>
     
 </body>
 </html>
