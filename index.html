@@ -12,7 +12,12 @@
 <body>
    <a-scene camera aspect-ratio="4:3" pov="50" embedded arjs>
     <a-marker id="marker1" type='pattern' url='./assets/images/pattern-images (1).patt'>
-        <a-box position="0 1 0" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-box position="0 1 0" rotation="0 45 0" color="#4CC3D9">
+        <a-animation attribute="scale"
+                 dur="500"
+                 to="2 2 2"
+                 repeat="indefinite"
+                 direction="alternate"></a-animation></a-box>
       </a-marker>
 
 
