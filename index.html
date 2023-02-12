@@ -23,10 +23,10 @@
             </a-entity>
       </a-marker>
 
-       <a-entity id="my-object">
+       
          <a-marker id="marker2" type='pattern' url='./assets/images/pattern-IMG-20210419-WA0007.patt'>
              
-             <
+           <a-entity id="my-object">
            <a-box position="0 1 0" rotation="0 45 0" color="#5d612f">
                <a-animation attribute="scale"
                  dur="500"
@@ -40,13 +40,30 @@
 
       
       <a-marker  id="marker3" type='pattern' url='./assets/images/pattern-061.patt'>
-
-          <a-sphere position="0 1 0" radius="1.25" color="#5a70ad"></a-sphere>
+          
+          <a-entity id="my-object">
+          <a-sphere position="0 1 0" radius="1.25" color="#5a70ad">
+          <a-animation attribute="scale"
+                 dur="500"
+                 to="2 2 2"
+                 repeat="indefinite"
+                 direction="alternate"></a-animation>
+          </a-sphere>
+          </a-entity>
       </a-marker>
+       
 
       <a-marker id="marker4" type='pattern' url='./assets/images/pattern-06.patt'>
-
-           <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B"></a-sphere>
+          
+          <a-entity id="my-object">
+          <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B">
+          <a-animation attribute="scale"
+                 dur="500"
+                 to="2 2 2"
+                 repeat="indefinite"
+                 direction="alternate"></a-animation>
+          </a-sphere>
+          </a-entity>
       </a-marker> 
 
       <a-entity camera></a-entity>
@@ -66,6 +83,11 @@
   myObject.addEventListener("mouseleave", function() {
     this.setAttribute("scale", "1 1 1");
   });
+        
+  myObject.addEventListener("touchstart", function() {
+    this.setAttribute("scale", "4 4 4");
+  });
+        
 </script>
     
 </body>
