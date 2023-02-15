@@ -33,15 +33,30 @@
       />
       </a-marker>
 
-      <a-marker id="marker4" type='pattern' url='./assets/images/pattern-06.patt'>
+   
 
-           <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B"></a-sphere>
+      <a-marker id="marker4" type='pattern' url='./assets/images/pattern-06.patt'>
+          
+          <a-entity id="my-object">
+          <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B">
+          <a-animation attribute="scale"
+                 dur="500"
+                 to="2 2 2"
+                 repeat="indefinite"
+                 direction="alternate"></a-animation>
+          </a-sphere>
+          </a-entity>
       </a-marker> 
 
       <a-entity camera></a-entity>
 
+
     </a-scene>
 
   
+
+    </a-scene>
+     
+
 </body>
 </html>
