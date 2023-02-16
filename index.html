@@ -4,18 +4,32 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script> 
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/gh/aframe/aframe-extras@9af9fa8/dist/aframe-extras.min.js"></script>
+=======
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+>>>>>>> 2ecb669af79693d2dcd07d3eed2e183200aa9f11
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Augmented-Reality</title>
 </head>
 <body>
+<<<<<<< HEAD
 
    <a-scene id="scene" camera aspect-ratio="4:3" pov="50" embedded arjs arjs-debug="false" >
       <a-marker id="marker1" type='pattern' url='./assets/images/pattern-images (1).patt'>
         <a-box position="0 1 0" rotation="0 45 0" color="#4CC3D9"></a-box> 
       
+=======
+   <a-scene camera aspect-ratio="4:3" pov="50" embedded arjs>
+       
+        <a-marker type='pattern' url='./assets/images/pattern-061.patt'>
+        <a-entity obj-model="obj: Untitled.obj; mtl: Untitled.mtl;" scale="-1 -1 -1"
+          rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"
+        />
+>>>>>>> 2ecb669af79693d2dcd07d3eed2e183200aa9f11
       </a-marker>
 
       <a-marker id="marker2" type='pattern' url='./assets/images/pattern-IMG-20210419-WA0007.patt'>
