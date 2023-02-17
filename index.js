@@ -1,11 +1,15 @@
 var scene = document.querySelector('a-scene');
-var entity = document.querySelector('a-marker');
+var entity1 = document.querySelector('#entity1');
+var entity2 = document.querySelector('#entity2');
+var entity3 = document.querySelector('#entity3');
+var entity4 = document.querySelector('#entity4');
 scene.addEventListener('touchstart', onTouchStart);
 scene.addEventListener('touchmove', onTouchMove);
 scene.addEventListener('touchend', onTouchEnd);
 
 let touchX;
-let touchY
+let touchY;
+let entityRotation;
 
 function onTouchStart(event) {
   touchX = event.touches[0].pageX;
