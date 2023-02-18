@@ -2,7 +2,7 @@
 var scene = document.querySelector('a-scene');
 var entity1 = document.querySelector('#entity1');
 var entity2 = document.querySelector('#entity2');
-var entity3 = document.querySelector('#entity3');
+// var entity3 = document.querySelector('#entity3');
 var entity4 = document.querySelector('#entity4');
 scene.addEventListener('touchstart', onTouchStart);
 scene.addEventListener('touchmove', onTouchMove);
