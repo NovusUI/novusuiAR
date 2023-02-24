@@ -1,5 +1,6 @@
+
 // Get the <a-entity> element that contains the model
-var modelEl = document.querySelector('#entity3');
+var modelEl = document.querySelector('#entity1');
 
 // Initialize variables to store the initial touch position and the current rotation
 var initialX = 0;
