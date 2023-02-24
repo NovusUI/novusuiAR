@@ -20,12 +20,12 @@ function onTouchMove(event) {
   var deltaX = touchX - touchStartX;
   var deltaY = touchY - touchStartY;
   
-  // move entity along x and y axis
-  var currentPosition = entity.getAttribute('position');
-  var newX = currentPosition.x + deltaX / 100;
-  var newY = currentPosition.y - deltaY / 100;
-  var currentZ = currentPosition.z;
-  entity.setAttribute('position', {x: newX, y: newY, z: currentZ});
+  // rotate entity
+  var currentRotation = entity.getAttribute('rotation');
+  var newX = currentRotation.x - deltaY / 2;
+  var newY = currentRotation.y - deltaX / 2;
+  var newZ = currentRotation.z;
+  entity.setAttribute('rotation', {x: newX, y: newY, z: newZ});
   
   // update touch start position
   touchStartX = touchX;
