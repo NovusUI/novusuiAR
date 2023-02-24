@@ -32,7 +32,7 @@ function onTouchMove(event) {
   var newRotation = {
       x: entityRotation.x + deltaY * 0.3,
       y: entityRotation.y + deltaX * 0.3,
-      z: entityRotation.z
+      // z: entityRotation.z
   };
   entity1.setAttribute('rotation', newRotation);
   console.log('newRotation', newRotation);
