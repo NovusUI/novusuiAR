@@ -33,5 +33,7 @@ function onTouchMove(event) {
 }
 
 function onTouchEnd(event) {
+    touchStartX = null;
+  touchStartY = null;
   // cleanup code
 }
