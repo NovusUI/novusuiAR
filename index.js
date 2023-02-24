@@ -2,6 +2,7 @@
 var scene = document.querySelector('a-scene');
 var entity1 = document.querySelector('#entity1');
 var entity2 = document.querySelector('#entity2');
+
 // var entity3 = document.querySelector('#entity3');
 var entity4 = document.querySelector('#entity4');
 scene.addEventListener('touchstart', onTouchStart);
@@ -31,7 +32,7 @@ function onTouchMove(event) {
   var newRotation = {
       x: entityRotation.x + deltaY * 0.3,
       y: entityRotation.y + deltaX * 0.3,
-      z: entityRotation.z + deltaX * 0.3,
+      z: entityRotation.z
   };
   entity1.setAttribute('rotation', newRotation);
   console.log('newRotation', newRotation);
