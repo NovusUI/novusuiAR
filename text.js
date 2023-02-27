@@ -25,7 +25,8 @@ function onTouchMove(event) {
   var newX = currentRotation.x - deltaY / 2;
   var newY = currentRotation.y - deltaX / 2;
   var newZ = currentRotation.z;
-  entity.setAttribute('rotation', {x: newX, y: newY, z: newZ});
+  console.log(newZ)
+  entity.setAttribute('rotation', {x: newX, y: newY, z: 0});
   
   // update touch start position
   touchStartX = touchX;
