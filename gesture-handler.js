@@ -46,7 +46,7 @@ AFRAME.registerComponent("gesture-handler", {
         //   event.detail.positionChange.x * this.data.rotationFactor;
         // this.el.object3D.rotation.x +=
         //   event.detail.positionChange.y * this.data.rotationFactor;
-        this.el.object3D.rotation.z += event.detail.positionChange.x * this.data.rotationFactor;
+        this.el.object3D.rotation.z -= event.detail.positionChange.x * this.data.rotationFactor;
         
       }
     },
