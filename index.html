@@ -24,7 +24,7 @@
 
       <a-marker id="marker2" type='pattern' url='./assets/images/pattern-IMG-20210419-WA0007.patt'>
 
-           <a-box id="entity2" position="0 1 0" rotation="0 45 0" color="#5d612f"></a-box>
+           <a-box id="entity2" position="0 1 0" rotation="0 45 0" color="#5d612f" gesture-handler></a-box>
 
       </a-marker>
 
@@ -33,7 +33,7 @@
 
           <!-- <a-sphere position="0 1 0" radius="1.25" color="#5a70ad"></a-sphere> -->
           <a-entity id="entity3" obj-model="obj: Untitled.obj; mtl: Untitled.mtl;" scale="0.0005 0.0005 0.0005"
-       position="-1 -1 -1"  
+       position="-1 -1 -1"  gesture-handler
       />
 
       <!-- rotation="3 3 3" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000" -->
@@ -44,7 +44,7 @@
       <a-marker id="marker4" type='pattern' url='./assets/images/pattern-06.patt'>
           
           <a-entity id="entity4">
-          <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B">
+          <a-sphere position="0 1 0" radius="1.25" color="#EE4B2B" gesture-handler>
           <a-animation attribute="scale"
                  dur="500"
                  to="2 2 2"
